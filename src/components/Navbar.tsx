@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Sprout, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const links = [
   { href: "#features", label: "Features" },
@@ -26,9 +27,7 @@ export const Navbar = () => {
     >
       <nav className="container flex items-center justify-between h-18 py-4">
         <a href="#" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-xl bg-gradient-grow flex items-center justify-center shadow-card group-hover:scale-110 transition-smooth">
-            <Sprout className="w-5 h-5 text-primary-foreground" />
-          </div>
+          <img src={logo} alt="AbotTanim Logo" className="w-8 h-8 object-contain" />
           <span className="font-display font-bold text-xl text-foreground">
             Abot<span className="text-gradient-harvest">Tanim</span>
           </span>
